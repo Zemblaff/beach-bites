@@ -7,3 +7,6 @@
 
 /* Dero: left side of the beach hero */
 .hero .dero-sidebar{position:absolute;left:max(0px,calc((100vw - 1500px)/2));bottom:12px;z-index:2;width:clamp(180px,24vw,390px);max-height:96%;object-fit:contain;object-position:bottom left;pointer-events:none;filter:drop-shadow(0 12px 14px rgba(22,59,74,.22))}.hero .hero-inner{z-index:3}@media(max-width:1000px){.hero .dero-sidebar{width:clamp(145px,25vw,250px);opacity:.95}.hero .hero-inner{padding-left:80px}}@media(max-width:620px){.hero .dero-sidebar{width:130px;max-height:220px;bottom:5px;left:-22px;opacity:.95}.hero .hero-inner{padding-left:0;padding-bottom:100px}.hero .hero-logo{width:min(90vw,520px)}}
+
+/* Dero positioning refinement: slightly larger, closer to logo, and overlapping the next section */
+.hero{overflow:visible;isolation:isolate}.hero .dero-sidebar{width:clamp(205px,27vw,440px);left:max(18px,calc((100vw - 1440px)/2 + 36px));bottom:-36px;max-height:none;z-index:4}.hero .wave{z-index:1}.hero .hero-inner{z-index:3}@media(max-width:1000px){.hero .dero-sidebar{width:clamp(160px,28vw,285px);left:12px;bottom:-25px}}@media(max-width:620px){.hero .dero-sidebar{width:145px;left:-10px;bottom:-20px;max-height:245px}.hero .hero-inner{padding-bottom:100px}}
