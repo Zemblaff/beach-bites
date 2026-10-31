@@ -34,3 +34,9 @@
 @media(max-width:1200px){.hero .dero-sidebar{left:30px}.hero .breeze-sidebar{right:30px}}
 @media(max-width:720px){.hero .dero-sidebar{left:12px}.hero .breeze-sidebar{right:12px}}
 @media(max-width:420px){.hero .dero-sidebar{left:-3px}.hero .breeze-sidebar{right:-3px}}
+
+/* Dero only: tiny move right; Breeze unchanged */
+.hero .dero-sidebar{left:max(44px,calc(50% - 706px))}
+@media(max-width:1200px){.hero .dero-sidebar{left:42px}}
+@media(max-width:720px){.hero .dero-sidebar{left:24px}}
+@media(max-width:420px){.hero .dero-sidebar{left:9px}}
