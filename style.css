@@ -40,3 +40,6 @@
 @media(max-width:1200px){.hero .dero-sidebar{left:42px}}
 @media(max-width:720px){.hero .dero-sidebar{left:24px}}
 @media(max-width:420px){.hero .dero-sidebar{left:9px}}
+
+/* Authentic neon logo in top navigation */
+.topbar .brand{display:inline-flex;align-items:center;flex-shrink:0;line-height:1}.topbar .nav-logo{display:block;width:auto;height:30px;max-width:min(180px,42vw);object-fit:contain}.topbar{min-height:64px}@media(max-width:720px){.topbar .nav-logo{height:27px;max-width:150px}}
