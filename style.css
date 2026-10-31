@@ -43,3 +43,6 @@
 
 /* Authentic neon logo in top navigation */
 .topbar .brand{display:inline-flex;align-items:center;flex-shrink:0;line-height:1}.topbar .nav-logo{display:block;width:auto;height:30px;max-width:min(180px,42vw);object-fit:contain}.topbar{min-height:64px}@media(max-width:720px){.topbar .nav-logo{height:27px;max-width:150px}}
+
+/* Centered five-item navigation without header logo */
+.topbar{justify-content:center}.topbar nav{justify-content:center;align-items:center;gap:clamp(16px,2.2vw,32px)}@media(max-width:720px){.topbar{justify-content:flex-end}.topbar nav{align-items:stretch;gap:0}.topbar .menu-toggle{margin-left:auto}}
