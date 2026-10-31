@@ -54,3 +54,34 @@
 
 /* Food thumbnails: transparent illustrated menu images */
 .menu-card-photo{height:180px;overflow:hidden}.menu-card-photo img{display:block;width:100%;height:100%;object-fit:contain;padding:8px 12px}@media(max-width:620px){.menu-card-photo{height:160px}}
+
+/* Beach Bites visual refresh — tropical atmosphere & illustrated menu */
+.hero{background:
+ radial-gradient(ellipse at 20% 20%,rgba(255,255,255,.28),transparent 33%),
+ linear-gradient(180deg,#8be5ec 0%,#c7f3ec 62%,#ffe2ad 62%,#f6c78d 100%)}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.32;background:
+ radial-gradient(ellipse at 7% 52%,rgba(255,255,255,.75) 0 2px,transparent 3px),
+ radial-gradient(ellipse at 93% 42%,rgba(255,255,255,.75) 0 2px,transparent 3px),
+ repeating-radial-gradient(ellipse 145px 34px at 50% 63%,transparent 0 21px,rgba(255,255,255,.32) 22px 24px,transparent 25px 48px);
+ mask-image:linear-gradient(to bottom,transparent 30%,black 65%,transparent 87%)}
+.sun{box-shadow:0 0 0 15px rgba(255,244,187,.12),0 0 0 36px rgba(255,244,187,.09),0 0 80px #fff4bb80}
+.section:not(.alt){background:linear-gradient(180deg,#fffdf8,#fffaf0)}
+.menu-grid{align-items:stretch;gap:24px}
+.menu-card{display:flex;flex-direction:column;border:1px solid rgba(22,59,74,.055);border-radius:22px;box-shadow:0 7px 26px rgba(22,59,74,.075);transition:transform .24s ease,box-shadow .24s ease}
+.menu-card:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(22,59,74,.14)}
+.menu-card-photo{height:205px;position:relative;isolation:isolate;background:linear-gradient(125deg,#a4edf0,#ffe7b4)}
+.menu-card-photo::after{content:"";position:absolute;inset:12px;border:1px solid rgba(255,255,255,.34);border-radius:13px;pointer-events:none;z-index:-1}
+.menu-card-photo img{height:100%;width:100%;padding:5px 16px;object-fit:contain;filter:drop-shadow(0 8px 7px rgba(42,70,56,.12));transition:transform .3s ease}
+.menu-card:hover .menu-card-photo img{transform:scale(1.065)}
+.menu-card-body{display:flex;flex-direction:column;flex:1;padding:23px 24px 24px}
+.menu-card h3{font-size:1.34rem;letter-spacing:-.02em}
+.menu-card p{flex:1;line-height:1.65}
+.menu-price{align-self:flex-start;margin-top:20px;padding:7px 15px;box-shadow:inset 0 0 0 1px rgba(183,24,118,.06)}
+@media(max-width:620px){
+ .menu-grid{gap:18px}
+ .menu-card-photo{height:180px}
+ .menu-card-body{padding:20px}
+ .menu-card:hover{transform:none}
+ .menu-card:hover .menu-card-photo img{transform:none}
+}
+@media(prefers-reduced-motion:reduce){.menu-card,.menu-card-photo img{transition:none}}
