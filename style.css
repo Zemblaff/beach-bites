@@ -111,3 +111,22 @@
 /* Keep all wooden signs perfectly horizontal */
 .hero .button,.menu-price,.menu-card:nth-child(even) .menu-price{transform:none}
 .hero .button:hover{transform:translateY(-3px)}
+
+/* Vespucci beach scenery — airy clouds, palms and fine sand */
+.hero{overflow:hidden}
+.hero .beach-cloud{position:absolute;z-index:1;pointer-events:none;width:155px;height:45px;opacity:.65;background:radial-gradient(ellipse at 25% 75%,white 0 27%,transparent 29%),radial-gradient(ellipse at 49% 42%,white 0 35%,transparent 37%),radial-gradient(ellipse at 76% 75%,white 0 26%,transparent 28%);filter:blur(1px)}
+.hero .cloud-one{top:16%;left:13%}
+.hero .cloud-two{top:25%;right:22%;transform:scale(.75);opacity:.48}
+.hero .beach-palm{position:absolute;z-index:1;bottom:0;width:clamp(130px,18vw,290px);height:clamp(220px,33vw,420px);background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20250%20390%22%3E%3Cpath%20d%3D%22M130%20390%20Q145%20270%20115%20128%22%20fill%3D%22none%22%20stroke%3D%22%2391613d%22%20stroke-width%3D%2220%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M130%20390%20Q145%20270%20115%20128%22%20fill%3D%22none%22%20stroke%3D%22%23c18a51%22%20stroke-width%3D%229%22%20stroke-linecap%3D%22round%22%20stroke-dasharray%3D%2211%2013%22%2F%3E%3Cg%20fill%3D%22%23397d67%22%20stroke%3D%22%23286753%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M115%20125%20Q40%2048%204%20122%20Q55%2097%20115%20139Z%22%2F%3E%3Cpath%20d%3D%22M115%20125%20Q49%2010%2021%2048%20Q80%2056%20121%20138Z%22%2F%3E%3Cpath%20d%3D%22M115%20125%20Q109%2013%20160%209%20Q132%2068%20125%20137Z%22%2F%3E%3Cpath%20d%3D%22M115%20125%20Q199%2036%20243%2077%20Q176%2083%20123%20139Z%22%2F%3E%3Cpath%20d%3D%22M115%20125%20Q212%20110%20227%20174%20Q177%20134%20120%20139Z%22%2F%3E%3Cpath%20d%3D%22M115%20125%20Q66%20105%2044%20193%20Q83%20150%20119%20139Z%22%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%22122%22%20cy%3D%22142%22%20r%3D%2210%22%20fill%3D%22%23a86b37%22%2F%3E%3Ccircle%20cx%3D%22108%22%20cy%3D%22145%22%20r%3D%228%22%20fill%3D%22%239a6131%22%2F%3E%3C%2Fsvg%3E") center bottom/contain no-repeat;opacity:.67;pointer-events:none}
+.hero .palm-left{left:-35px;transform:rotate(-8deg);transform-origin:bottom}
+.hero .palm-right{right:-48px;transform:scaleX(-1) rotate(-7deg);transform-origin:bottom}
+.hero::before{opacity:.65;background:
+ radial-gradient(circle at 10% 80%,rgba(150,99,49,.25) 0 1px,transparent 2px),
+ radial-gradient(circle at 67% 90%,rgba(150,99,49,.22) 0 1px,transparent 2px),
+ radial-gradient(circle at 85% 75%,rgba(255,255,255,.55) 0 1px,transparent 2px),
+ repeating-radial-gradient(ellipse 145px 34px at 50% 63%,transparent 0 21px,rgba(255,255,255,.23) 22px 24px,transparent 25px 48px);
+ background-size:37px 31px,53px 43px,29px 27px,auto;
+ mask-image:linear-gradient(to bottom,transparent 45%,black 67%,black 100%)}
+#jidlo{position:relative;background:radial-gradient(ellipse at -10% 16%,rgba(113,206,196,.095),transparent 32%),radial-gradient(ellipse at 110% 58%,rgba(231,185,111,.13),transparent 35%),linear-gradient(180deg,#fffdf8,#fffaf0)}
+@media(max-width:900px){.hero .beach-palm{width:150px;height:240px;opacity:.45}.hero .palm-left{left:-75px}.hero .palm-right{right:-75px}}
+@media(max-width:620px){.hero .beach-palm{width:115px;height:190px;opacity:.32}.hero .palm-left{left:-75px}.hero .palm-right{right:-75px}.hero .cloud-one{left:4%;top:11%;transform:scale(.55)}.hero .cloud-two{right:3%;top:19%;transform:scale(.45)}}
