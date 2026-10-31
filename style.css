@@ -22,3 +22,9 @@
 @media(max-width:1200px){.hero .dero-sidebar{left:0;width:clamp(135px,22vw,265px)}.hero .breeze-sidebar{right:0;width:clamp(135px,22vw,265px)}}
 @media(max-width:720px){.hero .dero-sidebar{left:-14px;width:clamp(85px,24vw,160px);bottom:-20px}.hero .breeze-sidebar{right:-14px;width:clamp(85px,24vw,160px);bottom:-20px}.hero .hero-inner{padding:0 0 100px}.hero .hero-logo{width:min(84vw,520px)}.hero .tagline{position:relative;z-index:6}}
 @media(max-width:420px){.hero .dero-sidebar{left:-25px;width:29vw;bottom:-15px}.hero .breeze-sidebar{right:-25px;width:29vw;bottom:-15px}.hero .hero-inner{padding-bottom:95px}.hero .hero-logo{width:88vw}}
+
+/* Small symmetrical inward adjustment */
+.hero .dero-sidebar{left:max(20px,calc(50% - 730px))}.hero .breeze-sidebar{right:max(20px,calc(50% - 730px))}
+@media(max-width:1200px){.hero .dero-sidebar{left:18px}.hero .breeze-sidebar{right:18px}}
+@media(max-width:720px){.hero .dero-sidebar{left:0}.hero .breeze-sidebar{right:0}}
+@media(max-width:420px){.hero .dero-sidebar{left:-15px}.hero .breeze-sidebar{right:-15px}}
