@@ -13,3 +13,6 @@
 
 /* Breeze: mirrored counterpart to Dero on the right */
 .hero .breeze-sidebar{position:absolute;right:max(18px,calc((100vw - 1440px)/2 + 36px));bottom:-36px;z-index:4;width:clamp(205px,27vw,440px);max-height:none;height:auto;object-fit:contain;object-position:bottom right;pointer-events:none;filter:drop-shadow(0 12px 14px rgba(22,59,74,.22))}@media(max-width:1000px){.hero .breeze-sidebar{width:clamp(160px,28vw,285px);right:12px;bottom:-25px}}@media(max-width:620px){.hero .breeze-sidebar{width:145px;right:-10px;bottom:-20px;max-height:245px}}
+
+/* Balanced character spacing and clean white foreground mask */
+.hero .dero-sidebar{left:max(12px,calc(50% - 530px));bottom:-34px;z-index:2}.hero .breeze-sidebar{right:max(12px,calc(50% - 530px));bottom:-34px;z-index:2}.hero .wave{z-index:5}.hero::after{content:"";position:absolute;z-index:5;left:0;right:0;bottom:-85px;height:85px;background:var(--white);pointer-events:none}.hero .hero-inner{z-index:3}@media(max-width:1000px){.hero .dero-sidebar{left:0}.hero .breeze-sidebar{right:0}}@media(max-width:620px){.hero .dero-sidebar{left:-10px;bottom:-20px}.hero .breeze-sidebar{right:-10px;bottom:-20px}.hero::after{bottom:-45px;height:45px}}
