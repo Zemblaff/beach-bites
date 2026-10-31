@@ -107,3 +107,7 @@
 .menu-price{margin-top:20px;padding:6px 15px;font-size:.96rem;transform:rotate(-2deg);align-self:flex-start}
 .menu-card:nth-child(even) .menu-price{transform:rotate(1.5deg)}
 @media(prefers-reduced-motion:reduce){.hero .button{transition:none}}
+
+/* Keep all wooden signs perfectly horizontal */
+.hero .button,.menu-price,.menu-card:nth-child(even) .menu-price{transform:none}
+.hero .button:hover{transform:translateY(-3px)}
