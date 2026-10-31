@@ -28,3 +28,9 @@
 @media(max-width:1200px){.hero .dero-sidebar{left:18px}.hero .breeze-sidebar{right:18px}}
 @media(max-width:720px){.hero .dero-sidebar{left:0}.hero .breeze-sidebar{right:0}}
 @media(max-width:420px){.hero .dero-sidebar{left:-15px}.hero .breeze-sidebar{right:-15px}}
+
+/* Final subtle inward nudge (12px per character) */
+.hero .dero-sidebar{left:max(32px,calc(50% - 718px))}.hero .breeze-sidebar{right:max(32px,calc(50% - 718px))}
+@media(max-width:1200px){.hero .dero-sidebar{left:30px}.hero .breeze-sidebar{right:30px}}
+@media(max-width:720px){.hero .dero-sidebar{left:12px}.hero .breeze-sidebar{right:12px}}
+@media(max-width:420px){.hero .dero-sidebar{left:-3px}.hero .breeze-sidebar{right:-3px}}
