@@ -10,3 +10,6 @@
 
 /* Dero positioning refinement: slightly larger, closer to logo, and overlapping the next section */
 .hero{overflow:visible;isolation:isolate}.hero .dero-sidebar{width:clamp(205px,27vw,440px);left:max(18px,calc((100vw - 1440px)/2 + 36px));bottom:-36px;max-height:none;z-index:4}.hero .wave{z-index:1}.hero .hero-inner{z-index:3}@media(max-width:1000px){.hero .dero-sidebar{width:clamp(160px,28vw,285px);left:12px;bottom:-25px}}@media(max-width:620px){.hero .dero-sidebar{width:145px;left:-10px;bottom:-20px;max-height:245px}.hero .hero-inner{padding-bottom:100px}}
+
+/* Breeze: mirrored counterpart to Dero on the right */
+.hero .breeze-sidebar{position:absolute;right:max(18px,calc((100vw - 1440px)/2 + 36px));bottom:-36px;z-index:4;width:clamp(205px,27vw,440px);max-height:none;height:auto;object-fit:contain;object-position:bottom right;pointer-events:none;filter:drop-shadow(0 12px 14px rgba(22,59,74,.22))}@media(max-width:1000px){.hero .breeze-sidebar{width:clamp(160px,28vw,285px);right:12px;bottom:-25px}}@media(max-width:620px){.hero .breeze-sidebar{width:145px;right:-10px;bottom:-20px;max-height:245px}}
