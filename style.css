@@ -171,3 +171,10 @@
 .hero .palm-right{right:-35px;transform:scaleX(-1)}
 @media(max-width:900px){.hero .beach-palm{width:165px;height:260px;opacity:1}.hero .palm-left{left:-65px}.hero .palm-right{right:-65px}}
 @media(max-width:620px){.hero .beach-palm{width:115px;height:190px;opacity:.85}.hero .palm-left{left:-65px}.hero .palm-right{right:-65px}}
+
+/* Fine-tune coconut trees: slightly higher and closer to center */
+.hero .beach-palm{bottom:14px}
+.hero .palm-left{left:-17px}
+.hero .palm-right{right:-17px}
+@media(max-width:900px){.hero .palm-left{left:-50px}.hero .palm-right{right:-50px}}
+@media(max-width:620px){.hero .beach-palm{bottom:9px}.hero .palm-left{left:-55px}.hero .palm-right{right:-55px}}
