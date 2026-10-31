@@ -46,3 +46,6 @@
 
 /* Centered five-item navigation without header logo */
 .topbar{justify-content:center}.topbar nav{justify-content:center;align-items:center;gap:clamp(16px,2.2vw,32px)}@media(max-width:720px){.topbar{justify-content:flex-end}.topbar nav{align-items:stretch;gap:0}.topbar .menu-toggle{margin-left:auto}}
+
+/* Event announcement */
+.event-card{display:flex;justify-content:space-between;align-items:center;gap:22px;background:#fff;border:1px solid #163b4a0d;border-radius:18px;padding:28px;box-shadow:0 5px 24px #163b4a12}.event-card h3{font:800 1.45rem/1.2 Outfit,sans-serif;margin:0 0 9px}.event-card p{margin:0;color:#56717b}.event-badge{display:inline-block;white-space:nowrap;padding:8px 14px;border-radius:999px;background:#ffe1f1;color:#b71876;font-weight:800;font-size:.85rem}@media(max-width:620px){.event-card{align-items:flex-start;flex-direction:column;padding:22px}}
