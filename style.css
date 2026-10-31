@@ -85,3 +85,25 @@
  .menu-card:hover .menu-card-photo img{transform:none}
 }
 @media(prefers-reduced-motion:reduce){.menu-card,.menu-card-photo img{transition:none}}
+
+/* Beach Bites: sun-weathered wooden beach signs, CSS only */
+.hero .button,.menu-price{
+  position:relative;
+  color:#442b19;
+  background:
+    repeating-linear-gradient(0deg,transparent 0 9px,rgba(92,48,19,.065) 10px,transparent 12px),
+    linear-gradient(95deg,#c88b4c 0%,#e9ba76 24%,#d7a05f 54%,#eac184 78%,#bd7d41 100%);
+  border:2px solid #a96e38;
+  border-radius:7px 12px 8px 11px;
+  box-shadow:inset 0 2px 1px rgba(255,246,205,.48),inset 0 -3px 2px rgba(101,54,21,.16),0 4px 0 #8e592f,0 8px 15px rgba(65,42,25,.16);
+  text-shadow:0 1px rgba(255,239,193,.45);
+  font-family:Outfit,sans-serif;
+  font-weight:800;
+  transform:rotate(-1deg);
+}
+.hero .button{padding:12px 25px;letter-spacing:.01em;transition:transform .2s ease,box-shadow .2s ease}
+.hero .button:hover{transform:translateY(-3px) rotate(0deg);box-shadow:inset 0 2px 1px rgba(255,246,205,.48),0 6px 0 #8e592f,0 12px 18px rgba(65,42,25,.18)}
+.hero .button:focus-visible{outline:3px solid #163b4a;outline-offset:5px}
+.menu-price{margin-top:20px;padding:6px 15px;font-size:.96rem;transform:rotate(-2deg);align-self:flex-start}
+.menu-card:nth-child(even) .menu-price{transform:rotate(1.5deg)}
+@media(prefers-reduced-motion:reduce){.hero .button{transition:none}}
