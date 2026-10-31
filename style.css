@@ -16,3 +16,9 @@
 
 /* Balanced character spacing and clean white foreground mask */
 .hero .dero-sidebar{left:max(12px,calc(50% - 530px));bottom:-34px;z-index:2}.hero .breeze-sidebar{right:max(12px,calc(50% - 530px));bottom:-34px;z-index:2}.hero .wave{z-index:5}.hero::after{content:"";position:absolute;z-index:5;left:0;right:0;bottom:-85px;height:85px;background:var(--white);pointer-events:none}.hero .hero-inner{z-index:3}@media(max-width:1000px){.hero .dero-sidebar{left:0}.hero .breeze-sidebar{right:0}}@media(max-width:620px){.hero .dero-sidebar{left:-10px;bottom:-20px}.hero .breeze-sidebar{right:-10px;bottom:-20px}.hero::after{bottom:-45px;height:45px}}
+
+/* Responsive character placement: symmetric outer gutters, clear of center logo */
+.hero .dero-sidebar{left:max(0px,calc(50% - 750px));right:auto}.hero .breeze-sidebar{right:max(0px,calc(50% - 750px));left:auto}
+@media(max-width:1200px){.hero .dero-sidebar{left:0;width:clamp(135px,22vw,265px)}.hero .breeze-sidebar{right:0;width:clamp(135px,22vw,265px)}}
+@media(max-width:720px){.hero .dero-sidebar{left:-14px;width:clamp(85px,24vw,160px);bottom:-20px}.hero .breeze-sidebar{right:-14px;width:clamp(85px,24vw,160px);bottom:-20px}.hero .hero-inner{padding:0 0 100px}.hero .hero-logo{width:min(84vw,520px)}.hero .tagline{position:relative;z-index:6}}
+@media(max-width:420px){.hero .dero-sidebar{left:-25px;width:29vw;bottom:-15px}.hero .breeze-sidebar{right:-25px;width:29vw;bottom:-15px}.hero .hero-inner{padding-bottom:95px}.hero .hero-logo{width:88vw}}
