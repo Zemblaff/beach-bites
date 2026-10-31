@@ -130,3 +130,22 @@
 #jidlo{position:relative;background:radial-gradient(ellipse at -10% 16%,rgba(113,206,196,.095),transparent 32%),radial-gradient(ellipse at 110% 58%,rgba(231,185,111,.13),transparent 35%),linear-gradient(180deg,#fffdf8,#fffaf0)}
 @media(max-width:900px){.hero .beach-palm{width:150px;height:240px;opacity:.45}.hero .palm-left{left:-75px}.hero .palm-right{right:-75px}}
 @media(max-width:620px){.hero .beach-palm{width:115px;height:190px;opacity:.32}.hero .palm-left{left:-75px}.hero .palm-right{right:-75px}.hero .cloud-one{left:4%;top:11%;transform:scale(.55)}.hero .cloud-two{right:3%;top:19%;transform:scale(.45)}}
+
+/* Spacious beachside details without distracting from the menu */
+#jidlo{background:
+ radial-gradient(ellipse 230px 470px at 0% 30%,rgba(74,179,164,.12),transparent 95%),
+ radial-gradient(ellipse 230px 470px at 100% 68%,rgba(238,180,98,.17),transparent 95%),
+ linear-gradient(180deg,#fffdf8,#fffaf0)}
+#jidlo::before,#jidlo::after{content:"";position:absolute;top:115px;bottom:80px;width:min(19vw,280px);pointer-events:none;opacity:.33;background:
+ repeating-radial-gradient(ellipse 130px 200px at 0% 45%,transparent 0 38px,rgba(72,169,155,.12) 39px 41px,transparent 42px 72px);
+ mask-image:linear-gradient(to bottom,transparent,black 20%,black 78%,transparent)}
+#jidlo::before{left:0}
+#jidlo::after{right:0;transform:scaleX(-1)}
+#jidlo>.container{position:relative;z-index:1}
+/* Drop the slogan and wooden CTA together, keeping the logo and characters fixed */
+.hero .tagline{position:relative;top:20px}
+.hero .hero-inner>.button{position:relative;top:20px}
+@media(max-width:720px){
+ #jidlo::before,#jidlo::after{width:12vw;opacity:.17}
+ .hero .tagline,.hero .hero-inner>.button{top:12px}
+}
