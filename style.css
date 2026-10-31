@@ -161,3 +161,13 @@
 @media(max-width:620px){
  #jidlo,#jidlo.section:not(.alt){background:linear-gradient(145deg,#e7f8f1 0%,#fff1d8 55%,#e7f7ef 100%)}
 }
+
+/* Restore original light food-section background */
+#jidlo,#jidlo.section:not(.alt){background:#fffdf8}
+#jidlo::before,#jidlo::after{display:none}
+/* Replace CSS palm artwork with uploaded coconut-tree PNG */
+.hero .beach-palm{position:absolute;z-index:1;bottom:0;width:clamp(155px,20vw,320px);height:clamp(245px,34vw,440px);object-fit:contain;object-position:center bottom;background:none;opacity:1;pointer-events:none}
+.hero .palm-left{left:-35px;transform:none}
+.hero .palm-right{right:-35px;transform:scaleX(-1)}
+@media(max-width:900px){.hero .beach-palm{width:165px;height:260px;opacity:1}.hero .palm-left{left:-65px}.hero .palm-right{right:-65px}}
+@media(max-width:620px){.hero .beach-palm{width:115px;height:190px;opacity:.85}.hero .palm-left{left:-65px}.hero .palm-right{right:-65px}}
