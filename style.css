@@ -339,3 +339,7 @@
 /* Reduce excess whitespace between the hero and the food menu. */
 #jidlo.section{padding-top:48px}
 @media(max-width:720px){#jidlo.section{padding-top:36px}}
+
+/* Fine-tune food section vertical spacing */
+#jidlo.section{padding-top:30px}
+@media(max-width:720px){#jidlo.section{padding-top:26px}}
