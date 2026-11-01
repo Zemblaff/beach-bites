@@ -276,3 +276,13 @@
  .hero .hero-inner{padding-bottom:245px!important}
  .hero .dero-sidebar,.hero .breeze-sidebar{width:58vw!important}
 }
+
+/* Mobile navigation: keep expanded menu in its own solid layer, never overlay page content. */
+@media(max-width:720px){
+ .topbar{position:sticky;top:0;z-index:1000;display:flex;flex-wrap:nowrap;height:56px;min-height:56px;overflow:visible;background:#fffdf8;isolation:isolate}
+ .topbar .menu-toggle{display:block;position:relative;z-index:1002;flex-shrink:0}
+ .topbar nav{display:none;position:absolute;top:100%;left:0;right:0;width:100%;max-height:calc(100dvh - 56px);overflow-y:auto;flex-basis:auto;flex-direction:column;gap:0;margin:0;padding:10px 20px 18px;background:#fffdf8;box-shadow:0 14px 22px rgba(22,59,74,.16);border-top:1px solid rgba(22,59,74,.1);z-index:1001}
+ .topbar nav.open{display:flex}
+ .topbar nav a{display:block;width:100%;padding:12px 8px;font-size:1rem;line-height:1.5;border-top:0;border-bottom:1px solid rgba(22,59,74,.1)}
+ .topbar nav a:last-child{border-bottom:0}
+}
