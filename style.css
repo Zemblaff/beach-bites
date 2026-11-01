@@ -251,3 +251,28 @@
   .hero .dero-sidebar,.hero .breeze-sidebar{width:38vw}
   .hero .tagline{margin-top:10px;margin-bottom:17px}
 }
+
+/* Mobile composition v2: characters are the foreground, palms frame the scene. */
+@media(max-width:720px){
+ .topbar{height:54px;min-height:54px;padding:6px 16px;align-items:center;justify-content:flex-end}
+ .topbar .menu-toggle{margin-left:auto}
+ .hero{padding:24px 12px 0;min-height:620px;background:linear-gradient(180deg,#93e6ea 0%,#c7f3ec 58%,#ffe2ad 58%,#f5c58c 100%)}
+ .hero .hero-inner{padding:0 0 255px!important;width:100%}
+ .hero .eyebrow{margin:0 auto 8px;font-size:.65rem;letter-spacing:.13em}
+ .hero .hero-logo{width:min(88vw,480px);margin:0 auto 2px}
+ .hero .tagline{margin:12px auto 16px;top:0;font-size:clamp(1rem,4.2vw,1.25rem)}
+ .hero .hero-inner>.button{top:0;padding:11px 20px;font-size:1rem}
+ .hero .dero-sidebar,.hero .breeze-sidebar{width:clamp(205px,58vw,300px)!important;max-height:none!important;height:auto;bottom:-8px!important;opacity:1;z-index:4}
+ .hero .dero-sidebar{left:-45px!important;right:auto}
+ .hero .breeze-sidebar{right:-45px!important;left:auto}
+ .hero .beach-palm{width:clamp(170px,46vw,235px)!important;height:260px!important;max-height:none!important;bottom:80px!important;opacity:.85;z-index:2}
+ .hero .palm-left{left:-105px!important}
+ .hero .palm-right{right:-105px!important}
+ .hero .wave{z-index:6;height:25px}
+ .hero::after{display:none}
+}
+@media(max-width:390px){
+ .hero{min-height:590px;padding-top:24px}
+ .hero .hero-inner{padding-bottom:245px!important}
+ .hero .dero-sidebar,.hero .breeze-sidebar{width:58vw!important}
+}
