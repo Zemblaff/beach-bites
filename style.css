@@ -335,3 +335,7 @@
 @media(max-width:720px){
  .hero .hero-inner>.button{padding:12px 21px;border-radius:14px}
 }
+
+/* Reduce excess whitespace between the hero and the food menu. */
+#jidlo.section{padding-top:48px}
+@media(max-width:720px){#jidlo.section{padding-top:36px}}
