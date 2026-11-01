@@ -286,3 +286,52 @@
  .topbar nav a{display:block;width:100%;padding:12px 8px;font-size:1rem;line-height:1.5;border-top:0;border-bottom:1px solid rgba(22,59,74,.1)}
  .topbar nav a:last-child{border-bottom:0}
 }
+
+/* Beach Bites refresh: clean neon-pink price tags and primary CTA */
+.menu-price,
+.menu-card:nth-child(even) .menu-price{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  align-self:flex-start;
+  margin-top:20px;
+  padding:7px 17px;
+  min-height:38px;
+  color:#fff;
+  font-family:Outfit,sans-serif;
+  font-weight:800;
+  font-size:1rem;
+  line-height:1.2;
+  letter-spacing:.01em;
+  background:#f72d9c;
+  background-image:none;
+  border:1px solid #ec248f;
+  border-radius:12px;
+  box-shadow:0 4px 11px rgba(221,38,133,.19);
+  text-shadow:none;
+  transform:none;
+}
+.menu-price::before,.menu-price::after{display:none}
+.hero .hero-inner>.button{
+  color:#fff;
+  background:#f72d9c;
+  background-image:none;
+  border:1px solid #ec248f;
+  border-radius:16px;
+  box-shadow:0 6px 16px rgba(192,20,113,.23);
+  text-shadow:none;
+  font-family:Outfit,sans-serif;
+  font-weight:800;
+  padding:14px 27px;
+  transition:transform .2s ease,background-color .2s ease,box-shadow .2s ease;
+}
+.hero .hero-inner>.button::before,.hero .hero-inner>.button::after{display:none}
+.hero .hero-inner>.button:hover{
+  background:#e91c91;
+  transform:translateY(-2px);
+  box-shadow:0 9px 20px rgba(192,20,113,.28);
+}
+.hero .hero-inner>.button:focus-visible{outline:3px solid #163b4a;outline-offset:4px}
+@media(max-width:720px){
+ .hero .hero-inner>.button{padding:12px 21px;border-radius:14px}
+}
